@@ -70,6 +70,9 @@ sql/database.sql
 - **SQLite**
 - Sistema operativo Windows / Linux / macOS
 
+---
+
+
 ### Compilazione
 ```bash
 g++ src/main.cpp -o expense_system -lsqlite3
