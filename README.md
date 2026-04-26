@@ -33,14 +33,9 @@ Il progetto consente a un singolo utente di registrare le proprie spese quotidia
 
 PersonalExpenseSystem/
 │
-├── src/
-│   └── main.cpp
+├── main.cpp
 │
-├── sql/
-│   └── database.sql
-│
-├── demo/
-│   └── demo_video.mp4   (oppure link esterno, vedi sotto)
+├── database.sql
 │
 └── README.md
 
