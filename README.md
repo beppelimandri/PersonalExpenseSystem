@@ -72,17 +72,6 @@ sql/database.sql
 
 ---
 
-
-### Compilazione
-```bash
-g++ src/main.cpp -o expense_system -lsqlite3
-
----
-
-Avvio ./expense_system
-
----
-
 ##  Demo del Funzionamento
 
 Il video dimostrativo del funzionamento del programma è disponibile al seguente link Google Drive:
