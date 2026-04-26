@@ -6,28 +6,87 @@ Il progetto consente a un singolo utente di registrare le proprie spese quotidia
 
 ---
 
-## Funzionalità Principali
+##  Funzionalità Principali
 
-- Gestione delle **categorie di spesa**
-- Inserimento di **spese giornaliere**
-- Definizione di **budget mensili** per categoria
-- Visualizzazione di **report riepilogativi**, tra cui:
+- Gestione delle categorie di spesa
+- Inserimento delle spese giornaliere
+- Definizione di budget mensili per categoria
+- Visualizzazione di report riepilogativi:
   - Totale spese per categoria
   - Elenco completo delle spese ordinate per data
 - Validazione degli input utente
-- Gestione dei dati tramite **database relazionale**
+- Persistenza dei dati tramite database relazionale SQLite
 
 ---
 
-## Tecnologie Utilizzate
+##  Tecnologie Utilizzate
 
 - **Linguaggio:** C++
 - **Database:** SQLite
 - **Interfaccia:** Console testuale
 - **Compilatore:** g++
-- **Persistenza dati:** SQLite (`spese.db`)
+- **Persistenza dati:** Database SQLite (`spese.db`)
 
 ---
 
-## Struttura del Repository# PersonalExpenseSystem
-Sistema di gestione delle spese personali in C++
+##  Struttura del Repository
+
+PersonalExpenseSystem/
+│
+├── src/
+│   └── main.cpp
+│
+├── sql/
+│   └── database.sql
+│
+├── demo/
+│   └── demo_video.mp4   (oppure link esterno, vedi sotto)
+│
+└── README.md
+
+---
+
+##  Database
+
+Il database è composto dalle seguenti tabelle:
+
+- **categorie**
+- **spese**
+- **budget**
+
+Sono definiti esplicitamente i seguenti vincoli di integrità:
+- `PRIMARY KEY`
+- `FOREIGN KEY`
+- `CHECK`
+- `UNIQUE`
+- `NOT NULL`
+
+Lo script SQL completo è disponibile nel file:
+
+
+sql/database.sql
+
+---
+
+##  Compilazione ed Esecuzione
+
+### Requisiti
+- Compilatore **g++**
+- **SQLite**
+- Sistema operativo Windows / Linux / macOS
+
+### Compilazione
+```bash
+g++ src/main.cpp -o expense_system -lsqlite3
+
+---
+
+Avvio ./expense_system
+
+---
+
+##  Demo del Funzionamento
+
+Il video dimostrativo del funzionamento del programma è disponibile al seguente link Google Drive:
+
+https://drive.google.com/file/d/1_s6A5pPQnmLf65B57M0HotYmOY1-DLwz/view?usp=sharing
